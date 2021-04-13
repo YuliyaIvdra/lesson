@@ -1,18 +1,17 @@
 <!DOCTYPE form>
  <html>
    <head>
-   	<title>Формы HTML</title>
+   	<title>Формы HTML старая</title>
    	<style type="text/css">
-   		* {
+   		.* {
    			padding: 0;
    		}
    		#search {
-           
-   		}
-   		.container {
+           }
+        .container {
          width: 200px; background-color: rgb(160,200,160);    
-         margin: 0 auto; padding: 15px;
-       	}
+         margin: 0 auto; padding: 15px;}
+       
        	form input {
        		width: 100%;
        		margin: 0 auto;
@@ -27,10 +26,16 @@
      <div class="container">
      	<form method="GET" id="search">
    	<p>
-   		<input type="text" name="query">
+   	<label for="name"> FIO </label>
+   		<input type="text" name="query" id="name">
    	</p>
    	<p>	
+   	<label> Phone </label>
    		<input type="text" name="a">
+   	</p>
+   	<p> 
+   	<label> Дата рождения </label>
+   	<input type="date" name="date" id="date">
    	</p>
    	<p>
    	<label for="course">Класс</label>

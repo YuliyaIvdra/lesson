@@ -1,0 +1,106 @@
+<!DOCTYPE form>
+ <html>
+   <head>
+   	<title>Формы HTML новая</title>
+   	<style type="text/css">
+   		* {padding: 0;}
+   		#search {  }
+   		.container {
+   			width: 200px; background-color: rgb(160,200,160);    
+         margin: 0 auto; padding: 15px;
+   		}
+   		
+   		form input:not([type="checkbox" type="radio" ]) {
+   			width: 100%;
+   		}
+   		.box {
+   			border: 10px solid rgb(160,200,160) ; padding: 15px; 
+       		margin: 50px;
+   		}
+   		 label {display: inline-block; width: 100%;}
+   	</style>
+   </head>
+   <body style="background: rgb(160,160,200)">
+   	<div class="container">
+     	<form method="GET" id="search">
+   	<p>
+   	<label for="name"> FIO </label>
+   		<input type="text" name="FIO" id="name">
+   	</p>
+   	<p>	
+   	<label> Phone </label>
+   		<input type="text" name="Phone">
+   	</p>
+   	<p>
+   		<label>Email</label>
+   		<input type="text" name="email">
+   	</p>
+   	<p> 
+   	<label> Дата рождения </label>
+   	<input type="date" name="date" id="date">
+   	</p>
+   	<p>
+   		<label>Фрукты</label>
+   		<label>
+   		<input type="checkbox" name="fruit">
+   		Яблоки
+   	</label>
+   	<label>	
+   		<input type="checkbox" name="fruit">
+   		Вишня
+   	</label>
+   	<label>	
+   		<input type="checkbox" name="fruit">
+   		Арбуз
+   	</label>
+   	<label>	
+   		<input type="checkbox" name="fruit">
+   		Дыня
+   	</label>
+   	<label>	
+   		<input type="checkbox" name="fruit">
+   		Лимон 
+   	</label>
+   	</p>
+   	<p>
+   	<label for="course">Класс</label>
+   		<select>
+     	<option>1</option>
+     	<option>2</option>
+     	<option>3</option>
+     	<option>4</option>
+     	<option>5</option>
+     	<option>6</option>
+     	<option>7</option>
+     </select>
+     <label>Время года</label>
+   		<label>
+   		<input type="radio" name="season">
+   		<img src="images/winter.png" alt="зима"/>
+   	</label>
+   	<label>	
+   		<input type="radio" name="season">
+   		Весна
+   	</label>
+   	<label>	
+   		<input type="radio" name="season">
+   		Лето
+   	</label>
+   	<label>	
+   		<input type="radio" name="season">
+   		Осень
+   	</label>
+   	</p>
+	<button type="submil">Отправить</button>
+   	</div>
+   	<p class="box">
+     	Тут какой-то прикольный текст должен быть о чём-то интересном, даже не знаю чтоб сюда написать, ну поди этого хватит.
+     </p>
+     <p class="box">
+     	Тут какой-то прикольный текст должен быть о чём-то интересном, даже не знаю чтоб сюда написать, ну поди этого хватит. Тут у нас что-то должно будет поменяться,это мы сделали для примера.
+     </p>
+     <p class="box">
+     В старой форме что-то случилось, пришлось сделать новую, тут уже всё прекрасно
+ </p>
+   </body>
+   </html>
