@@ -20,5 +20,11 @@ function changeColor () {
 function selectColor () {
 	let color = document.getElementById("color").value;
 	document.body.style.background = color;
-	console.log(color);
+	 document.getElementById('result').innerHTML = color;
+	//console.log(color);
 }
+let oper_elements = document.getElementsByClassName('oper');
+//let numbers = document.getElementsByClassName('number');
+console.log(oper_elements);
+
+
