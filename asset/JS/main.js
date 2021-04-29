@@ -24,7 +24,29 @@ function selectColor () {
 	//console.log(color);
 }
 let oper_elements = document.getElementsByClassName('oper');
-//let numbers = document.getElementsByClassName('number');
+let numbers = document.getElementsByClassName('number');
+for (var i = 0; i < oper_elements.length; i++) {
+	oper_elements[i].addEventListener('click', oper);
+}
+for (var i = 0; i < numbers.length; i++) {
+	numbers[i].addEventListener('click', addNumber);
+}
+function oper() {
+	let o = this.value;
+	console.log(o);
+	add (o)
+	if (o == '=') {  //calc() }
+}
+}
+function addNumber() {
+	let n = this.value;
+	add(n);
+}
+function add(v) {
+	let input = document.getElementById('enter');
+
+	let o = input.value;
+	input.value = o + v;
+}
+
 console.log(oper_elements);
-
-
